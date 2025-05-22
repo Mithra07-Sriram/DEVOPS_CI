@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>E6 Car Spa - Premium Car Services </title>
+    <title>Car Spa - Premium Car Services</title>
     <meta name="description" content="Book premium car services at E6 Car Spa. Car wash, engine service, and more by expert mechanics." />
     <style>
+      /* Fade In Animation */
       @keyframes fadeInUp {
         from {
           opacity: 0;
@@ -17,6 +18,23 @@
           transform: translateY(0);
         }
       }
+
+      /* Apply fade-in animation to root container */
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(to right, #e0f7fa, #ffffff);
+        animation: fadeInUp 1s ease-out;
+      }
+
+      #root {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        animation: fadeInUp 1.2s ease-out;
+      }
     </style>
   </head>
   <body>
@@ -24,3 +42,4 @@
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
+
